@@ -13,8 +13,10 @@ env:
   jobs:
     - DISTRIBUTION: centos
       VERSION: 7
+      arch: arm64
     - DISTRIBUTION: ubuntu
       VERSION: 18.04
+      arch: arm64
 
 services:
   - docker
