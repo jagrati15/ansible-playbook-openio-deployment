@@ -1,6 +1,7 @@
 ---
 os: linux
 dist: bionic
+arch: arm64
 
 language: python
 python:
@@ -12,11 +13,9 @@ env:
     - SDS_RELEASE=20.04
   jobs:
     - DISTRIBUTION: centos
-      VERSION: 7
-      arch: arm64
+      VERSION: 7      
     - DISTRIBUTION: ubuntu
       VERSION: 18.04
-      arch: arm64
 
 services:
   - docker
